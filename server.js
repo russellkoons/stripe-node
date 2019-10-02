@@ -3,6 +3,10 @@ const stripe = require("stripe")("sk_test_vo319kn4BiDIDF0orZp1ym6j00Kc7INuXS");
 
 app.use(require("body-parser").text());
 
+app.get('/', (req, res) => {
+  res.send({statusText: 'Hello'});
+});
+
 app.post("/charge", async (req, res) => {
   try {
     let {status} = await stripe.charges.create({
