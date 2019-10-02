@@ -1,0 +1,11 @@
+{
+  "name": "stripe-node",
+  "version": "1.0.0",
+  "description": "Backend for test Stripe app",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Russell Koons",
+  "license": "ISC"
+}
